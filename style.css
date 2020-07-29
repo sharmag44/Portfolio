@@ -1,0 +1,29 @@
+body{
+  margin:0;
+  
+}
+h1,h2{
+   font-family: 'Krona One', sans-serif;
+}
+p{
+  font-family: 'Mulish', sans-serif;
+}
+h3,h4{
+  font-family: 'Roboto Mono',monospace;
+}
+.grid
+{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-row-gap:50px;
+  grid-column-gap:50px;
+}
+.grid-item{
+  border:1px solid;
+  width:100px;
+  height:100px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
