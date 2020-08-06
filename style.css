@@ -11,9 +11,23 @@ p{
 h3,h4{
   font-family: 'Roboto Mono',monospace;
 }
-.navbar ul  li{
-  float: right;
+.navbar{
+
 }
+ul{
+text-decoration: none;
+}
+li{
+list-style-type:none;
+float: left;
+padding-left:10px;
+padding-right:20px;
+
+}
+a{
+  text-decoration: none;
+}
+
 .grid
 {
   display: grid;
@@ -30,3 +44,8 @@ h3,h4{
   align-items: center;
   align-content: center;
 }
+#welcome-section{
+  height:70vh;
+}
+
+
