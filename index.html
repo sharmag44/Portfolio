@@ -1,38 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- Nav Bar -->
-    <nav id="navbar">
-      <ul class="nav-links">
-        <li>
-          <a href="#>About</a>
-          </li>
-        <li>
-          <a href="#>Home</a>
-          </li>
-        <li>
-          <a href="#>Projects</a>
-          </li>
-        <li>
-          <a href="#>Github</a>
-          </li> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Mulish&family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	 crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	 crossorigin="anonymous">
+
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	 crossorigin="anonymous">
+
+	</script>
+	<!-- Nav Bar -->
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Portfolio</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav-item navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
       </ul>
+  </div>
+        
     </nav>
-    <!-- End of Navbar -->
+    <!-- End of -->
     <!-- welcome section -->
     <section id="welcome-section">
-      <h1>I am Shambhu Sharma</h1>
-      
+      <div class="container">
+        <img class="myimage"
+        src="data:image/jpeg;base64,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" alt="myimage" >
+      </div>
+        <div class="intro">
+      <h1 id="intro">I am Shambhu Sharma</h1>
+      <h2>I am a Web Developer ✔</h2> 
+      <p class="info"> Hi There, I am  Shambhu i Just new of Javascript and Python's Django framework who always just making website to improve my skill so  there aren some projects available in projects section checkout and message me so that it can help me to improve </p>
+      <button type="button" class="btn btn-primary"><a  class="btn btn-primary" href="https://certification.w3schools.com/cert_diploma_pdf.php?id=12129002&format=a4">Certification</a></button>
+    </div>
+    
     </section>
+ <br><br> <br> <br>
+    <section id="Projects">
+      <h1 class="projects-title">Projects</h1>
+      <div class="container">
+        <div class="row">
+          <!-- card 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="image/TinDog.JPG" class="card-img-top cards">
+        <div class="card-body">
+          <h4 class="card-title"><a href="https://shambhusharma44.github.io/TinDog/">TinDog</a></h4>
+         <p class="card-text">A Dog Lover Website this makes you pet healthy and more active you going to love this website</p>
+          
+        </div>
+      </div>
+          </div>
+      <!-- card 2-->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+         <div class="card">
+             <img src="image/CV.JPG" class="card-img-top cards">
+              <div class="card-body">
+                <h4 class="card-title"><a href="https://shambhusharma44.github.io/mypage/">Portfolio</a></h4>
+                <p  class="card-text">This My Portfolio cum CV you can check this website and hire me for work </p>
+              </div>
+          </div>
+      </div>
+      <!-- card 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card">
+         <img src="image/Simon.JPG" class="card-img-top cards">
+        <div class="card-body">
+         <h4 class="card-title"><a href="https://repl.it/@sharmag44/Simon-Game#index.html">Simon Game</a></h4>
+         <p class="card-text">Simon is an electronic game of memory skill invented by Ralph H.</p>
+        </div>
+      </div>
+      </div>
+        </div>
+      </div>
+      <br> <br><br>
+    </section>
+    <section id="achieve-Skill">
+      <h3>Skill and Achievement</h3>
+      <div class="container">
+        <div class="row">
+         <!-- Java Script -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="image/js.png" class="card-img-top js">
+              <div class="card-body">
+                <h4 class="card-title">Javascript</h4>
+              <p class="card-text"> A Javascript and DOM Developer</p>
+            </div>
+            </div>
+          </div>
+          <!-- Python 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img src="image/python.png" class="card-img-top python">
+              <div class="card-body">
+                <h4 class="card-title">Python</h4>
+              <p class="card-text"> A Python and Django Web Developer</p>
+            </div>
+            </div>
+          </div>
+          <!-- Bootstrap 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card"> 
+              <img src="image/bootstrap.jpg" class="card-img-top bootstrap">
+              <div class="card-body">
+                <h4 class="card-title">Bootstrap 4</h4>
+                <p class="card-text"> A CSS framework Designer</p>
+               </div>
+            </div>
+          </div>
+
+            <!-- HTML 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="image/html.png" class="card-img-top html">
+                <div class="card-body">
+                <h4 class="card-title">HTML 5</h4>
+                <p class="card-text">A Structure  of Web Page</p>
+              </div>
+              </div>
+            </div>
+
+            <!-- CSS card-->
+            <div class="col-lg-4 col-md-6 col-sm-12">.
+              <div class="card css-card" >
+                <img src="image/css.png" class="crad-img-top css">
+                <div class="card-body">
+                  <h4 class="card-title">CSS 3</h4>
+                  <p class="card-text">To Add Design and color to website</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="image/jquery.jpg" class="card-img-top jquery">
+                <div class="card-body">
+                  <h4 class="card-title">Jquery</h4>
+                  <p class="card-text">Jquery is Javascript library</p>
+                </div>
+            </div>
 
 
- <script src="script.js"></script>
+        <!-- Container and row closing tag -->
+        </div>
+      </div>
+      </section>
+                
+    <footer>
+      <i class="fa fa-facebook-square fa-3x"></i>
+      <i class="fa fa-twitter fa-3x"></i>
+    </footer>
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
   </body>
 </html>
